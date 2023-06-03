@@ -1,62 +1,71 @@
-.container {  display: grid;
-    grid-template-columns: 1fr 1fr 1fr;
-    grid-template-rows: .25fr 1fr .1fr;
-    gap: 0px 0px;
-    grid-auto-flow: row;
-    grid-template-areas:
-      "header header header"
-      "main main main"
-      "footer footer footer";
-  }
-  
-  .header {  display: grid;
-    grid-template-columns: 1fr 1fr 1fr;
-    grid-template-rows: 1fr 1fr 1fr;
-    
-    gap: px 0px;
-    grid-auto-flow: row;
-    grid-template-areas:
-      "picture title title"
-      "picture title title"
-      "nav nav nav";
-    grid-area: header;
-   
-  }
-  
-  .picture { grid-area: picture; }
-  
-  .nav { grid-area: nav; }
-  
-  .title { grid-area: title; }
-  
-  .main {  display: grid;
-    grid-template-columns: 1fr 1fr 1fr;
-    grid-template-rows: 1fr 1fr 1fr;
-    
-    gap: 0px 0px;
-    grid-auto-flow: row;
-    grid-template-areas:
-      "section1 section1 section1"
-      "section2 section2 section2"
-      "section3 section3 section3";
-    grid-area: main;
-  }
-  
-  .section1 { grid-area: section1; }
-  
-  .section2 { grid-area: section2; }
-  
-  .section3 { grid-area: section3; }
-  
-  .footer { grid-area: footer; }
-  
+.container {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-rows: 0.25fr 1fr 0.1fr;
+  gap: 0px 0px;
+  grid-auto-flow: row;
+  grid-template-areas:
+    "header header header"
+    "main main main"
+    "footer footer footer";
+}
 
-  .me {
-  }
-  
- // img { 
-    width: 100px
-  }
+.header {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-rows: 1fr 1fr 1fr;
+
+  gap: px 0px;
+  grid-auto-flow: row;
+  grid-template-areas:
+    "picture title title"
+    "picture title title"
+    "nav nav nav";
+  grid-area: header;
+}
+
+.picture {
+  grid-area: picture;
+}
+
+.nav {
+  grid-area: nav;
+}
+
+.title {
+  grid-area: title;
+}
+
+.main {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-rows: 1fr 1fr 1fr;
+
+  gap: 0px 0px;
+  grid-auto-flow: row;
+  grid-template-areas:
+    "section1 section1 section1"
+    "section2 section2 section2"
+    "section3 section3 section3";
+  grid-area: main;
+}
+
+.section1 {
+  grid-area: section1;
+}
+
+.section2 {
+  grid-area: section2;
+}
+
+.section3 {
+  grid-area: section3;
+}
+
+.footer {
+  grid-area: footer;
+}
+
 body {
   background-color: rgb(98, 140, 187);
 }
